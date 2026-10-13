@@ -17,16 +17,16 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
 
 /* ---------- الشريط العلوي ---------- */
 .topbar{position:fixed;top:calc(10px + env(safe-area-inset-top));left:10px;right:10px;z-index:50;display:flex;justify-content:space-between;align-items:center;
-  padding:7px 10px;direction:ltr;color:#fff;border-radius:34px;background:rgba(11,46,58,.42);border:1px solid rgba(255,255,255,.28);
+  padding:6px 8px;direction:ltr;color:#fff;border-radius:34px;background:rgba(11,46,58,.42);border:1px solid rgba(255,255,255,.28);
   -webkit-backdrop-filter:blur(14px) saturate(1.3);backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 6px 24px rgba(0,0,0,.18);max-width:560px;margin:0 auto}
-.tb-side{display:flex;align-items:center;gap:10px}
-.icon-btn{position:relative;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1.5px solid rgba(255,255,255,.5);background:rgba(255,255,255,.1);transition:.2s}
+.tb-side{display:flex;align-items:center;gap:6px;min-width:0}
+.icon-btn{position:relative;flex:0 0 auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1.5px solid rgba(255,255,255,.5);background:rgba(255,255,255,.1);transition:.2s}
 .icon-btn:active{transform:scale(.94)}
-.icon-btn svg{width:23px;height:23px}
-.badge{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;border-radius:10px;background:var(--gold);color:#222;
-  font-size:12px;font-weight:800;display:grid;place-items:center;padding:0 5px}
-.logo{display:flex;align-items:center;margin-left:4px}
-.logo img{height:34px;width:auto;display:block}
+.icon-btn svg{width:19px;height:19px}
+.badge{position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;border-radius:9px;background:var(--gold);color:#222;
+  font-size:11px;font-weight:800;display:grid;place-items:center;padding:0 4px}
+.logo{display:flex;align-items:center;margin-left:2px;min-width:0}
+.logo img{height:28px;max-width:100%;width:auto;display:block}
 .logo.dark{justify-content:center;margin:0 0 6px}
 .logo.dark img{height:46px}
 .hero-logo{height:90px;width:auto;margin-bottom:18px}
@@ -104,3 +104,5 @@ button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit
   padding:10px 20px;border-radius:30px;font-weight:700;font-size:14px;opacity:0;pointer-events:none;transition:.25s;z-index:200}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 .badge[hidden]{display:none}
+
+@media(max-width:360px){.topbar{left:6px;right:6px;padding:5px 6px}.tb-side{gap:4px}.icon-btn{width:33px;height:33px}.icon-btn svg{width:18px;height:18px}.logo img{height:25px}}
