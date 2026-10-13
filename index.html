@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>السكب | عطور فاخرة</title>
+<meta name="description" content="السكب — متجر عطور فاخرة. عود، مسك، عنبر وورد بجودة استثنائية.">
+<meta name="theme-color" content="#0b2e3a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ========== الشريط العلوي ========== -->
+<header class="topbar" id="topbar">
+  <div class="tb-side">
+    <a class="icon-btn" id="lnkInsta" target="_blank" rel="noopener" aria-label="انستقرام">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg>
+    </a>
+    <a class="icon-btn" id="lnkWhats" target="_blank" rel="noopener" aria-label="واتساب">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15l-.3-.2-3.1.9.9-3-.2-.3A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.8-.8-1.4-1.700-1.5-2-.2-.3 0-.4.1-.6l.4-.5.3-.5v-.5l-.9-2.200c-.2-.5-.4-.5-.6-.5Z"/></svg>
+    </a>
+    <a class="icon-btn" id="lnkTiktok" target="_blank" rel="noopener" aria-label="تيك توك">
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 2h-3.2v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.1a6.1 6.1 0 1 0 5.3 6.1V8.600a7.400 7.400 0 0 0 4.300 1.400V6.800A4.300 4.300 0 0 1 16.600 2Z"/></svg>
+    </a>
+    <a class="logo" href="#top" aria-label="السكب"><img id="logoImg" alt="السكب"></a>
+  </div>
+  <div class="tb-side">
+    <button class="icon-btn" id="btnCart" aria-label="السلة">
+      <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span class="badge" id="cartCount" hidden>0</span>
+    </button>
+    <button class="icon-btn" id="btnQR" aria-label="رمز QR للموقع">
+      <svg viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></g><g fill="currentColor"><rect x="5.3" y="5.3" width="2.400" height="2.400"/><rect x="16.300" y="5.300" width="2.400" height="2.400"/><rect x="5.300" y="16.300" width="2.400" height="2.400"/><rect x="14" y="14" width="3" height="3"/><rect x="18" y="14" width="3" height="3"/><rect x="14" y="18" width="3" height="3"/><rect x="18" y="18" width="3" height="3"/></g></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ========== الواجهة (فيديو أو صورة) ========== -->
+<section class="hero" id="top">
+  <div class="hero-media" id="heroMedia"></div>
+  <div class="hero-shade"></div>
+  <div class="hero-inner">
+    <img class="hero-logo" id="heroLogo" alt="السكب">
+    <h1>فخامة تُروى<br>ولا توصف</h1>
+    <p>اكتشف عطوراً تتجاوز حدود الزمان والمكان، صُنعت بعناية فائقة لتكون رفيقة لحظاتك الاستثنائية وتجسد أرقى معايير الجمال.</p>
+    <a href="#collection" class="btn-outline">اكتشف المجموعة</a>
+  </div>
+  <div class="hero-fade"></div>
+</section>
+
+<!-- ========== المنتجات ========== -->
+<main class="collection" id="collection">
+  <div class="sec-head">
+    <span class="sec-kicker">مجموعتنا</span>
+    <h2>عطور السكب</h2>
+    <div class="orn"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer class="footer">
+  <div class="logo dark"><img id="footLogo" alt="السكب"></div>
+  <p>عطور فاخرة بتوقيع السكب</p>
+  <div class="foot-social">
+    <a id="fInsta" target="_blank" rel="noopener">انستقرام</a>
+    <a id="fTiktok" target="_blank" rel="noopener">تيك توك</a>
+    <a id="fWhats" target="_blank" rel="noopener">واتساب</a>
+  </div>
+  <small>© <span id="yr"></span> السكب — جميع الحقوق محفوظة</small>
+</footer>
+
+<!-- ========== نافذة QR ========== -->
+<div class="overlay" id="qrModal" hidden>
+  <div class="modal qr-modal" role="dialog" aria-label="رمز QR">
+    <button class="close" data-close aria-label="إغلاق">✕</button>
+    <h3>امسح الرمز لفتح الموقع</h3>
+    <div class="qr-box"><canvas id="qrCanvas"></canvas></div>
+    <div class="support">
+      <span>الدعم الفني :</span>
+      <a id="supportNum" dir="ltr"></a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== نافذة التفاصيل ========== -->
+<div class="overlay" id="detailModal" hidden>
+  <div class="modal" role="dialog" aria-label="تفاصيل المنتج">
+    <button class="close" data-close aria-label="إغلاق">✕</button>
+    <img id="dImg" alt="">
+    <h3 id="dName"></h3>
+    <div class="by" id="dBy"></div>
+    <p id="dDesc"></p>
+    <ul class="notes" id="dNotes"></ul>
+    <div class="d-price" id="dPrice"></div>
+    <button class="btn-dark wide" id="dAdd">أضف للسلة</button>
+  </div>
+</div>
+
+<!-- ========== السلة ========== -->
+<div class="overlay" id="cartModal" hidden>
+  <div class="modal cart-modal" role="dialog" aria-label="السلة">
+    <button class="close" data-close aria-label="إغلاق">✕</button>
+    <h3>سلة المشتريات</h3>
+    <div id="cartList"></div>
+    <div class="cart-total"><span>المجموع</span><b id="cartTotal"></b></div>
+    <button class="btn-dark wide" id="btnOrder">إتمام الطلب عبر واتساب</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="products.js"></script>
+<script src="firebase-config.js"></script>
+<script src="firebase-adapter.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
